@@ -72,16 +72,14 @@ function setBGColors() {
         currentTime = parseInt(moment().format('H'));
 
         if (currentTime < calTimeBlock) {
-            $(this).removeclass('past present');
-            $(this).addclass('future');
+            $(this).removeClass('past present');
+            $(this).addClass('future');
         } else if (currentTime === calTimeBlock) {
-            $(this).removeclass('present future');
-            $(this).addclass('past');
-
-
+            $(this).removeClass('present future');
+            $(this).addClass('past');
         } else if (currentTime > calTimeBlock) {
-            $(this).removeclass('past future');
-            $(this).addclass('present');
+            $(this).removeClass('past future');
+            $(this).addClass('present');
         } else {
             console.log("Error in time calculation");
         }
