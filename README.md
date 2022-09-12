@@ -33,7 +33,7 @@ To start the application just visit the website
 
 ![alt text](assets/images/Screenshot-2.jpg)
 
-- Save Button - so the user may save the calender in local storage and when they refresh the page it will be persistant
+- Save Button - so the user may save the calender in local storage and when they refresh the page it will be persistent
 
 ![alt text](assets/images/Screenshot-3.jpg)
 
