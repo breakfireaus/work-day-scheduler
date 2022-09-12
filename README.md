@@ -26,16 +26,24 @@ To start the application just visit the website
 
 ![alt text](assets/images/Screenshot-1.jpg)
 
-- Passage of time
-    - Red = Past
-    - Grey = Present
+- Passage of time legend
+    - Grey = Past
+    - Red = Present
     - Green = Future
 
 ![alt text](assets/images/Screenshot-2.jpg)
 
-- Save Button - so the user may save the calender in local storage and when they refresh the page it will be persistent
+- Save Button - so the user may save the schedule in local storage and when they refresh the page it will be persistent
 
 ![alt text](assets/images/Screenshot-3.jpg)
+
+- Clear Schedule Button - so the user may clear the schedule in local storage and the screen
+
+![alt text](assets/images/Screenshot-5.jpg)
+
+- When mouse hovers over Clear Schedule Button changes red to warn user that it will clear schedule
+
+![alt text](assets/images/Screenshot-6.jpg)
 
 - Screenshot of filled out Calender which is saved
 

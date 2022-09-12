@@ -24,11 +24,10 @@
   border-color: var(--c-black);
   background-color: var(--c-red);
   box-shadow: 3px 3px 0px 0px var(--c-black);
+  transition: all 0.2s ease-in-out;
 }
 
-#delete_data:focus {
-  background-color: var(--c-red)
-}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
