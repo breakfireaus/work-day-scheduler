@@ -11,7 +11,8 @@ var timeArr = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 var delete_data=document.getElementById("delete_data")
 
 delete_data.onclick=function(){
-    localStorage.clear("hour " + calEntryEventTime)
+    localStorage.clear();
+$("textarea").val("");
 }
 
 // save button
@@ -63,7 +64,7 @@ function saveButtonClickHandler(event) {
 
 // Stores the time and the text Values to the local Storage where (time = key) and (user's input text = value)
 function StoreEvents() {
-    localStorage.setItem("hour " + calEntryEventTime, calEntryEventTxt);
+    localStorage.setItem("time block " + calEntryEventTime, calEntryEventTxt);
 };
 
 // Changes the colour of the timeblock according to whether past, present, future (time progression)
