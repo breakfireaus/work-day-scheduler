@@ -12,6 +12,25 @@
   --c-lblue: #8ecae6;
 }
 
+#delete_data{
+  padding: 10px;
+  border-radius: 5rem;
+  background-color: var(--c-yellow);
+  margin: 5px;
+  box-shadow: 3px 3px 0px 0px var(--c-black);
+  
+
+}
+#delete_data:hover{
+  border-color: var(--c-black);
+background-color: var(--c-red);
+box-shadow: 3px 3px 0px 0px var(--c-black);
+}
+
+#delete_data:focus{
+  background-color: var(--c-red)
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
