@@ -8,11 +8,11 @@ var currentTime;
 var calEntryEventTime;
 var calEntryEventTxt;
 var timeArr = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-var delete_data=document.getElementById("delete_data")
+var delete_data = document.getElementById("delete_data")
 
-delete_data.onclick=function(){
+delete_data.onclick = function () {
     localStorage.clear();
-$("textarea").val("");
+    $("textarea").val("");
 }
 
 // save button
@@ -83,12 +83,12 @@ function setBGColors() {
         } else if (currentTime === calTimeBlock) {
             $(this).removeClass('past');
             $(this).addClass('present');
-        }  else {
+        } else {
             $(this).removeClass('past');
             $(this).removeClass('present');
             $(this).addClass('future');
         }
-       
+
     })
 };
 

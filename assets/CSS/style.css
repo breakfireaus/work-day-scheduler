@@ -12,22 +12,21 @@
   --c-lblue: #8ecae6;
 }
 
-#delete_data{
+#delete_data {
   padding: 10px;
   border-radius: 5rem;
   background-color: var(--c-yellow);
   margin: 5px;
   box-shadow: 3px 3px 0px 0px var(--c-black);
-  
-
 }
-#delete_data:hover{
+
+#delete_data:hover {
   border-color: var(--c-black);
-background-color: var(--c-red);
-box-shadow: 3px 3px 0px 0px var(--c-black);
+  background-color: var(--c-red);
+  box-shadow: 3px 3px 0px 0px var(--c-black);
 }
 
-#delete_data:focus{
+#delete_data:focus {
   background-color: var(--c-red)
 }
 
@@ -86,6 +85,7 @@ textarea {
   background-color: var(--c-lgrey);
   /* color: white; */
 }
+
 /*Included - Left color black for legibility*/
 .present {
   background-color: var(--c-red);
@@ -117,23 +117,29 @@ textarea {
 
 @media only screen and (max-width: 767px) {
   .jumbotron {
-  border-bottom: 2px solid var(--c-black);
+    border-bottom: 2px solid var(--c-black);
   }
+
   .jumbotron h1 {
     font-size: 3em;
   }
+
   .jumbotron p {
     font-size: medium;
   }
+
   .jumbotron #currentDate {
     font-size: 2em;
   }
+
   .row {
     margin-bottom: 5em;
-  }  
+  }
+
   .hour {
     font-weight: bold;
   }
+
   textarea {
     background: transparent;
     border: none;
@@ -141,6 +147,7 @@ textarea {
     resize: none;
     padding: 10px;
   }
+
   .saveBtn {
     border: none;
     border-radius: 0 0 10px 10px;
@@ -148,10 +155,11 @@ textarea {
 }
 
 @media only screen and (max-width:502px) {
-    .jumbotron h1 {
-      font-size: 2.5em;
-    }
-    .jumbotron #currentDate {
-      font-size: 1.5em;
-    }
+  .jumbotron h1 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron #currentDate {
+    font-size: 1.5em;
+  }
 }
