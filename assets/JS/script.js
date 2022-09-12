@@ -8,7 +8,11 @@ var currentTime;
 var calEntryEventTime;
 var calEntryEventTxt;
 var timeArr = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+var delete_data=document.getElementById("delete_data")
 
+delete_data.onclick=function(){
+    localStorage.removeItem("hour " + calEntryEventTime)
+}
 // save button
 var saveBtn = $('.saveBtn');
 
@@ -30,6 +34,7 @@ function currentMomentDate() {
     currentDate = moment().format('LLLL');
     currentDateEl.text(currentDate);
 };
+
 
 // Renders events that are pulled from local storage and places them in the DOM 
 function renderEvents() {
@@ -57,7 +62,7 @@ function saveButtonClickHandler(event) {
 
 // Stores the time and the text Values to the local Storage where (time = key) and (user's input text = value)
 function StoreEvents() {
-    localStorage.setItem(calEntryEventTime, calEntryEventTxt);
+    localStorage.setItem("hour " + calEntryEventTime, calEntryEventTxt);
 };
 
 // Changes the colour of the timeblock according to whether past, present, future (time progression)
@@ -68,21 +73,20 @@ function setBGColors() {
         calTimeBlock = $(this).attr('id').split('-')[1];
         // convert it to a moment.js format, then an integer
         calTimeBlock = parseInt(moment(calTimeBlock, 'H').format('H'));
-        // get moment.js tiome & format identically
+        // get moment.js time & format identically
         currentTime = parseInt(moment().format('H'));
 
-        if (currentTime < calTimeBlock) {
-            $(this).removeClass('past present');
-            $(this).addClass('future');
-        } else if (currentTime === calTimeBlock) {
-            $(this).removeClass('present future');
+        if (calTimeBlock < currentTime) {
             $(this).addClass('past');
-        } else if (currentTime > calTimeBlock) {
-            $(this).removeClass('past future');
+        } else if (currentTime === calTimeBlock) {
+            $(this).removeClass('past');
             $(this).addClass('present');
-        } else {
-            console.log("Error in time calculation");
+        }  else {
+            $(this).removeClass('past');
+            $(this).removeClass('present');
+            $(this).addClass('future');
         }
+       
     })
 };
 
