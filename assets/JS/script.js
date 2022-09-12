@@ -11,8 +11,9 @@ var timeArr = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 var delete_data=document.getElementById("delete_data")
 
 delete_data.onclick=function(){
-    localStorage.removeItem("hour " + calEntryEventTime)
+    localStorage.clear("hour " + calEntryEventTime)
 }
+
 // save button
 var saveBtn = $('.saveBtn');
 
