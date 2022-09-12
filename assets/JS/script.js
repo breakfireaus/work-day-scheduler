@@ -106,4 +106,3 @@ setIntervalOnMinute();
 // initializes page
 init();
 
-//I have to add media-queries to update look on mobile/small screens
