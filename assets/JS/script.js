@@ -31,7 +31,7 @@ function init() {
     setBGColors();
 };
 
-// Retrieves the current date and renders it in the Jumbotrom Header 
+// Retrieves the current date and renders it in the Jumbotron Header 
 function currentMomentDate() {
     currentDate = moment().format('LLLL');
     currentDateEl.text(currentDate);
@@ -42,7 +42,7 @@ function currentMomentDate() {
 function renderEvents() {
     for (let i = 0; i < timeArr.length; i++) {
         $('[id^=timeblock-]').each(function (i, v) {
-            $(v).val(localStorage.getItem(timeArr[i]));
+            $(v).val(localStorage.getItem('time block ' + timeArr[i]));
         })
     }
 };
@@ -87,7 +87,7 @@ function setBGColors() {
             $(this).removeClass('past');
             $(this).removeClass('present');
             $(this).addClass('future');
-        }
+        } 
 
     })
 };
